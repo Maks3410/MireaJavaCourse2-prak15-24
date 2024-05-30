@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface OwnerRepository extends JpaRepository<Owner, Long> {
     List<Owner> findByItemId(Long itemId);
+    List<Owner> findAll();
 }

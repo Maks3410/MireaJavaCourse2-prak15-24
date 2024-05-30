@@ -27,4 +27,8 @@ public class ItemService {
 //        }
         return itemRepository.findByCriteria(params);
     }
+
+    public List<Item> getAllItems() {
+        return itemRepository.findAll();
+    }
 }

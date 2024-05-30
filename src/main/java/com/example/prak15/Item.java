@@ -20,4 +20,14 @@ public class Item {
     private String creationDate;
     @Column(name = "price")
     private double price;
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", creationDate='" + creationDate + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
